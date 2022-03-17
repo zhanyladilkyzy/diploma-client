@@ -1,30 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainPageComponent } from './main-page/main-page.component';
 import { HeaderComponent } from './header/header.component';
-import { DashboadPageComponent } from './dashboad-page/dashboad-page.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { ReportsComponent } from './reports/reports.component';
-import { UserProfileComponent } from './calendar/user-profile/user-profile.component';
-import { CallsComponent } from './calendar/calls/calls.component';
-import { NotificationsComponent } from './calendar/notifications/notifications.component';
+import { FooterComponent } from './footer/footer.component';
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainPageComponent,
     HeaderComponent,
-    DashboadPageComponent,
-    CalendarComponent,
-    ReportsComponent,
-    UserProfileComponent,
-    CallsComponent,
-    NotificationsComponent
+    FooterComponent,
+    RegistrationPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
