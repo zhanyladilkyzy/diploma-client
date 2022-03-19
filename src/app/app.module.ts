@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
