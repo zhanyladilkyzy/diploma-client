@@ -1,0 +1,86 @@
+.intro {
+  background: #FFCB11;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  margin: 30% 10% ;
+}
+
+.leaf {
+  width: 10%;
+  height: 10%;
+}
+
+.element {
+  height: 10%;
+  width: 10%;
+}
+.elements {
+  display: flex;
+  flex-direction: row;
+}
+.opportunity {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  margin: 5%;
+}
+.sections{
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 40%;
+  padding-top: 40px;
+  margin: 10px;
+}
+.right {
+  width: 40%;
+  margin: 10px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 500px;
+}
+.picture, .picture-laptop  {
+  width: 80%;
+ }
+.picture-laptop {
+  width: 70%;
+}
+.aboutus, .our {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 5%;
+
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.right-end {
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  border: 1px solid black;
+  margin: 30px;
+}

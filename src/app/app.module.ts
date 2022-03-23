@@ -10,6 +10,11 @@ import { FooterComponent } from './footer/footer.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { CalendarPageComponent } from './calendar-page/calendar-page.component';
+import { ReportPageComponent } from './report-page/report-page.component';
+import { UserProfilePageComponent } from './user-profile-page/user-profile-page.component';
+import { CardPageComponent } from './card-page/card-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     RegistrationPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    DashboardPageComponent,
+    CalendarPageComponent,
+    ReportPageComponent,
+    UserProfilePageComponent,
+    CardPageComponent
   ],
   imports: [
     BrowserModule,
