@@ -1,0 +1,40 @@
+.kpi {
+  border: 1px solid #FFCB11;
+  color: #FFCB11;
+}
+
+.report-page {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  color: #798024;
+  font-family: Montserrat;
+}
+.reports {
+  width: 30%;
+  border-left: #798024;
+  display: flex;
+  flex-direction: column;
+}
+.last-reports {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 8%;
+  height: 70%;
+}
+.report {
+  width: 50%;
+}
+h1 {
+  text-align: center;
+}
+.report-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.report-data {
+  text-align: end;
+}

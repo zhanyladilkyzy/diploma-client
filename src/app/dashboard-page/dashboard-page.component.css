@@ -1,0 +1,12 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: row;
+}
+.backlog {
+  border: 1px solid #798024;
+  margin: 10px;
+}
+.new, .in-progress, .done {
+  border: 1px solid #FFCB11;
+  margin: 10px ;
+}

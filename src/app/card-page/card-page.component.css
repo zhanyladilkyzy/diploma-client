@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-head {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #798024;
+  justify-content: space-between;
+  align-items: end;
+  padding: 10px;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+}
+.description, .card-data {
+  border: 1px solid #798024;
+  margin: 5px;
+  width: 50%;
+}
+.close {
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+}
+.card-discussion {
+  margin: 20px;
+}
+.comment {
+  display: flex;
+}
+.comment-input {
+  display: flex;
+  flex-direction: row;
+}
+.input {
+  height: 40px;
+}
