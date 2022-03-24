@@ -17,12 +17,13 @@
 }
 
 .element {
-  height: 10%;
-  width: 10%;
+  height: 40%;
+  width: 40%;
 }
 .elements {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .opportunity {
   font-family: Montserrat;
@@ -83,4 +84,9 @@
 .box {
   border: 1px solid black;
   margin: 30px;
+}
+
+.step {
+  height: 50%;
+  width: 70%;
 }

@@ -1,49 +1,53 @@
+<!--<div class = "navbar">-->
+<!--  <div class="left">-->
+<!--    <a href="#">-->
+<!--      <img class="logo" src="./assets/content/logo/logo.png" alt="">-->
+<!--    </a>-->
+<!--&lt;!&ndash;    <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="#">Calendar</a>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="#">Reports</a>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a href="#">Dashboards</a>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+<!--  </div>-->
+<!--  <div class="right">-->
+
+<!--  </div>-->
+<!--</div>-->
+
+
 <div class="navbar navbar-expand-lg navbar-light bg-light header">
   <div class="container-fluid">
-    <a routerLink="/" class="navbar-brand">Logo</a>
-
+    <a routerLink="/" class="navbar-brand">
+      <img class="logo" src="./assets/content/logo/logo.png" alt="">
+    </a>
     <div class="mr-5">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Dashbords</a>
+          <a class="nav-link" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Calendar</a>
+          <a class="nav-link" href="#">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reports</a>
+        <li class="nav-item dropdown">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn" id="dropdownBasic1" ngbDropdownToggle>
+              <img class="menu" src="./assets/content/icons/menu.png" alt="Menu">
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>About Us</button>
+              <button ngbDropdownItem>Opportunities</button>
+              <button ngbDropdownItem>Our family</button>
+            </div>
+          </div>
         </li>
-      </ul>
-      <ul>
-        <li>Call</li>
-        <li>Notification</li>
-        <li>User Profile</li>
-
       </ul>
     </div>
-
-<!--    <div class="mr-5">-->
-<!--      <ul class="navbar-nav mr-auto">-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#">Login</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#">Register</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item dropdown">-->
-<!--          <div ngbDropdown class="d-inline-block">-->
-<!--            <button class="btn" id="dropdownBasic1" ngbDropdownToggle>-->
-<!--              Menu-->
-<!--            </button>-->
-<!--            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">-->
-<!--              <button ngbDropdownItem>About Us</button>-->
-<!--              <button ngbDropdownItem>Opportunities</button>-->
-<!--              <button ngbDropdownItem>Our family</button>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
   </div>
 </div>
 

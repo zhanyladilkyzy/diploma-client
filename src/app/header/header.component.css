@@ -1,9 +1,22 @@
-.header {
+.navbar {
   position: absolute;
   width: 100%;
   height: 8%;
 
   background: #FFFFFF;
-  border: 1px solid #798024;
+  border: 2px solid #798024;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  color: #798024;
+  font-family: Montserrat;
+}
+.logo {
+  width: 10%;
+  margin: auto 20px;
+}
+.menu {
+  width: 100%;
+height: 100%;
+  /*margin: auto;*/
 }
