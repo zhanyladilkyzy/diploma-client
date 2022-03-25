@@ -21,32 +21,31 @@
 <!--</div>-->
 
 
-<div class="navbar navbar-expand-lg navbar-light bg-light header">
-  <div class="container-fluid">
-    <a routerLink="../mainpage" class="navbar-brand">
+<div class="header">
+  <div class="left-part ml-5">
+    <a routerLink="../mainpage" class="mr-5">
       <img class="logo" src="./assets/content/logo/logo.png" alt="">
     </a>
-    <div class="mr-5">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink = "../login">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink = "../signup">Register</a>
-        </li>
-        <li class="nav-item dropdown">
-          <div ngbDropdown class="d-inline-block">
-            <button class="btn" id="dropdownBasic1" ngbDropdownToggle>
-              <img class="menu" src="./assets/content/icons/menu.png" alt="Menu">
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <a ngbDropdownItem [href]="'/main-page#aboutUs'">About Us</a>
-              <a ngbDropdownItem [href]="'/main-page#opportunities'">Opportunities</a>
-              <a ngbDropdownItem [href]="'/main-page#ourFamily'">Our family</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+    <a class="link-header">Calendar</a>
+    <a class="link-header">Reports</a>
+    <a class="link-header">Dashboard</a>
+  </div>
+
+  <div class="right-part">
+    <a class="link-header" routerLink = "../login">Login</a>
+    <a class="link-header" routerLink = "../signup">Register</a>
+
+    <div class="nav-item dropdown">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn" id="dropdownBasic1" ngbDropdownToggle>
+          <img class="menu" src="./assets/content/icons/menu.png" alt="Menu">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <a ngbDropdownItem [href]="'/main-page#aboutUs'">About Us</a>
+          <a ngbDropdownItem [href]="'/main-page#opportunities'">Opportunities</a>
+          <a ngbDropdownItem [href]="'/main-page#ourFamily'">Our family</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
