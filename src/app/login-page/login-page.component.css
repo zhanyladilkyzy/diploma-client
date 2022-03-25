@@ -1,0 +1,35 @@
+.login {
+  font-family: Montserrat;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 40%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.square {
+  border-radius: 0px;
+  border: 1px solid #798024;
+  background: #FFF5CF;
+}
+.abutton {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+button {
+  border: 1px solid #798024;
+  padding: 15px 35px;
+  background-color: #FFFFFF;
+  color: #798024;
+  border-radius: 0px;
+  border: 1px solid #798024;
+}
+button:hover{
+  background: #FFF5CF;
+}

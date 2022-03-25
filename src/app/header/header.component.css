@@ -10,6 +10,7 @@
   flex-direction: row;
   color: #798024;
   font-family: Montserrat;
+  position: fixed;
 }
 .logo {
   width: 10%;
