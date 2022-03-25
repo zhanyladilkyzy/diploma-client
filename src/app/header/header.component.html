@@ -40,9 +40,9 @@
               <img class="menu" src="./assets/content/icons/menu.png" alt="Menu">
             </button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button ngbDropdownItem>About Us</button>
-              <button ngbDropdownItem>Opportunities</button>
-              <button ngbDropdownItem>Our family</button>
+              <a ngbDropdownItem [href]="'/main-page#aboutUs'">About Us</a>
+              <a ngbDropdownItem [href]="'/main-page#opportunities'">Opportunities</a>
+              <a ngbDropdownItem [href]="'/main-page#ourFamily'">Our family</a>
             </div>
           </div>
         </li>
