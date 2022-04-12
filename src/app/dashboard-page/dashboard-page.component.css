@@ -1,6 +1,9 @@
 .dashboard-page {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  font-family: Montserrat;
+  color: #798024;
 }
 .backlog {
   border: 1px solid #798024;
@@ -9,4 +12,13 @@
 .new, .in-progress, .done {
   border: 1px solid #FFCB11;
   margin: 10px ;
+}
+.add-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background: #FFF5CF;
+}
+.sprint{
+  width: 20%;
 }
