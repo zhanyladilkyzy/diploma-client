@@ -1,0 +1,10 @@
+[
+  {
+    "context": [
+      "/auth"
+    ],
+    "target": "http://localhost:9004",
+    "secure": true,
+    "changeOrigin": true
+  }
+]

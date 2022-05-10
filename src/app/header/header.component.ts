@@ -21,4 +21,14 @@ export class HeaderComponent implements OnInit {
     // this.route.url
     return false;
   }
+
+  navCalendar(): void {
+    this.router.navigate(['/calendar']);
+  }
+  navReports(): void {
+    this.router.navigate(['/report']);
+  }
+  navDashboard(): void {
+    this.router.navigate(['/dashboards']);
+  }
 }

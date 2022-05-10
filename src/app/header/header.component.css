@@ -10,7 +10,7 @@
   flex-direction: row;
   color: #798024;
   font-family: Montserrat;
-  position: fixed;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin: 0;

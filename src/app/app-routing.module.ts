@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'report', component: ReportPageComponent},
   {path: 'dashboards', component: DashboardPageComponent},
   {path: 'calendar', component: CalendarPageComponent},
+  // {path: 'scrumboard', component: ScrumboardComponent},
   {path: '', redirectTo: 'main-page', pathMatch: 'full'}
 ];
 
