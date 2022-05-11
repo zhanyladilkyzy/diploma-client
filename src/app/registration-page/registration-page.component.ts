@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import {FormControl, FormGroup, NgForm} from '@angular/forms';
+import {User} from '../user';
+import {HttpErrorResponse} from '@angular/common/http';
+import {AuthService} from '../core/authentication/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-registration-page',
@@ -7,30 +11,27 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./registration-page.component.css']
 })
 export class RegistrationPageComponent implements OnInit {
-  form = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-  });
-  constructor() { }
+  // form = new FormGroup({
+  //   email: new FormControl(''),
+  //   password: new FormControl(''),
+  // });
+  public users: User[];
+  constructor(private readonly router: Router, private authService: AuthService) {
+    this.users = [];
+  }
 
   ngOnInit(): void {
   }
-
-  public register() {
-    // Use the form value to do authentication
-    console.log(this.form.value);
-    // Navigate after successful login
+  public onRegisterUser(registerForm: NgForm): void {
+    // document.getElementById('register-user-form').click();
+    this.authService.registerUser(registerForm.value).subscribe(
+      (response: User) => {
+        console.log(response);
+        // this.getUserById();
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+    )
   }
-// <script type="text/javascript">
-//     $(function () {
-//       $('#datetimepicker5').datetimepicker({
-//         defaultDate: "11/1/2013",
-//         disabledDates: [
-//           moment("12/25/2013"),
-//           new Date(2013, 11 - 1, 21),
-//           "11/22/2013 00:53"
-//         ]
-//       });
-//     });
-// </script>
 }
