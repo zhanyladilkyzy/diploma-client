@@ -1,6 +1,6 @@
 <div class="container registration">
   <!-- Default form register -->
-  <form class=" border border-light p-5">
+  <form class=" border border-light p-5" #registerUser="ngForm" (ngSubmit)="onRegisterUser(registerUser)">
     <p class="heading">Register</p>
 
 <!--    Name-->
@@ -82,14 +82,12 @@
           <input type="password" class="form-control square" id="inputPassword">
         </div>
       </div>
-<!--      <div class="card-footer">-->
         <div class="d-flex justify-content-center">
-          <!-- The button has a click handler, it will be disabled if the form is not valid -->
-          <button (click)="register()" [disabled]="!form.valid" type="submit">
+          <button type="button" id=" register-user-form">Close</button>
+          <button [disabled]="!registerUser.valid" type="submit">
             Sign Up
           </button>
-<!--        </div>-->
-      </div>
+        </div>
 
 
   </form>

@@ -1,16 +1,17 @@
 <!-- This flex container takes the full height and vertically centers the content -->
 <div class="box">
   <div class="login">
-          <label for="email">Email address</label>
-          <input id="email" formControlName="email" type="email" required class="form-control square" />
-          <label for="password">Password</label>
-          <input id="password" formControlName="password" type="password" required class="form-control square" />
-        <!-- The button has a click handler, it will be disabled if the form is not valid -->
-    <div class="abutton">
-      <button (click)="submit()" [disabled]="!form.valid" type="submit" class="btn">
-        Log in
-      </button>
-    </div>
+    <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+        <label for="email">Email address</label>
+        <input id="email" formControlName="email" type="email" required class="form-control square" />
+        <label for="password">Password</label>
+        <input id="password" formControlName="password" type="password" required class="form-control square" />
+      <!-- The button has a click handler, it will be disabled if the form is not valid -->
+      <div class="abutton">
+        <button class="btn" id ="login-user-form">Close</button>
+        <button (click)="onLogin(loginForm)" [disabled]="!loginForm.valid" type="submit" class="btn">Log in</button>
+      </div>
+    </form>
   </div>
 
 </div>

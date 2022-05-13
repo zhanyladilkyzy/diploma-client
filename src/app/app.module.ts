@@ -15,6 +15,7 @@ import { CalendarPageComponent } from './calendar-page/calendar-page.component';
 import { ReportPageComponent } from './report-page/report-page.component';
 import { UserProfilePageComponent } from './user-profile-page/user-profile-page.component';
 import { CardPageComponent } from './card-page/card-page.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CardPageComponent } from './card-page/card-page.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
